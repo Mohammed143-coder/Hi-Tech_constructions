@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HI -Tech Constructions | Contact</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      .success-message {
+        display: none;
+        background: #d4edda;
+        color: #155724;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        border: 1px solid #c3e6cb;
+      }
+      .error-message {
+        display: none;
+        background: #f8d7da;
+        color: #721c24;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        border: 1px solid #f5c6cb;
+      }
+
+      /* Professional Loader Styles */
+      .btn-loading {
+        position: relative;
+        color: transparent !important;
+        pointer-events: none;
+      }
+
+      .btn-loading::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 50%;
+        margin-left: -10px;
+        margin-top: -10px;
+        border: 2px solid transparent;
+        border-top-color: #ffffff;
+        border-radius: 50%;
+        animation: button-loading-spinner 1s ease infinite;
+      }
+
+      @keyframes button-loading-spinner {
+        from {
+          transform: rotate(0turn);
+        }
+        to {
+          transform: rotate(1turn);
+        }
+      }
+
+      /* Hover Effects */
+      .btn-primary:hover:not(.btn-loading) {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(13, 110, 253, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary {
+        transition: all 0.3s ease;
+      }
+
+      /* Confetti Canvas */
+      #confetti-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        z-index: 9999;
+      }
+      .location-card {
+        background: #fff;
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+        width: calc(100% - 2rem); /* full width minus mx-4 */
+      }
+
+      .location-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      .location-card i {
+        color: #e74c3c;
+      }
+
+      .location-card h5 {
+        font-weight: 600;
+        font-size: 1rem;
+      }
+
+      .location-card p {
+        font-size: 0.9rem;
+        color: #555;
+      }
+
+      .location-card .btn {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 576px) {
+        .location-card {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .location-card a {
+          margin-top: 5px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-grow text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+      <canvas id="confetti-canvas"></canvas>
+      <div class="container">
+        <nav
+          class="navbar navbar-expand-lg navbar-light border-bottom border-2 border-white"
+        >
+          <a href="index.html" class="navbar-brand">
+            <h1>Hi-Tech</h1>
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler ms-auto me-0"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="about.html" class="nav-item nav-link">About</a>
+              <a href="service.html" class="nav-item nav-link">Services</a>
+              <a href="project.html" class="nav-item nav-link">Projects</a>
+
+              <a href="contact.html" class="nav-item nav-link active"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid pb-5 bg-primary hero-header">
+      <div class="container py-5">
+        <div class="row g-3 align-items-center">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="display-1 mb-0 animated slideInLeft">Contact</h1>
+          </div>
+          <div class="col-lg-6 animated slideInRight">
+            <nav aria-label="breadcrumb">
+              <ol
+                class="breadcrumb justify-content-center justify-content-lg-end mb-0"
+              >
+                <li class="breadcrumb-item">
+                  <a class="text-primary" href="#!">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a class="text-primary" href="#!">Pages</a>
+                </li>
+                <li
+                  class="breadcrumb-item text-secondary active"
+                  aria-current="page"
+                >
+                  Contact
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="text-center wow fadeIn" data-wow-delay="0.1s">
+          <h1 class="mb-5">
+            Have Any Query?
+            <span class="text-uppercase text-primary bg-light px-2"
+              >Contact Us</span
+            >
+          </h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <p class="text-center mb-4">
+              We’re here to turn your ideas into reality. At HI-Tech
+              Constructions, we specialize whether you’re building a dream home,
+              designing a commercial projects.our expert team is ready to help
+              every step of the way.
+            </p>
+
+            <div class="wow fadeIn" data-wow-delay="0.3s">
+              <div id="successMessage" class="success-message">
+                <strong>Success!</strong> Your message has been sent
+                successfully.
+              </div>
+
+              <div id="errorMessage" class="error-message">
+                <strong>Error!</strong> There was a problem sending your
+                message. Please try again.
+              </div>
+
+              <form
+                id="contactForm"
+                action="https://api.web3forms.com/submit"
+                method="POST"
+              >
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="86b6c5f7-6c1a-4680-879f-bf491af41670"
+                />
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        placeholder="Your Name"
+                        required
+                      />
+                      <label for="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Your Email"
+                        required
+                      />
+                      <label for="email">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        name="subject"
+                        placeholder="Subject"
+                        required
+                      />
+                      <label for="subject">Subject</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                        placeholder="Mobile No.."
+                        required
+                      />
+                      <label for="subject">Mobile No</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        id="message"
+                        placeholder="Leave a message here"
+                        style="height: 150px"
+                        required
+                      ></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button
+                      class="btn btn-primary w-100 py-3"
+                      type="submit"
+                      id="submitBtn"
+                    >
+                      Send Message
+                    </button>
+                    <!-- Button -->
+                    <a
+                      href="https://maps.app.goo.gl/NKekL3VURm2i3hJC9"
+                      target="_blank"
+                      class="btn btn-primary btn-sm w-100 p-2 mt-2"
+                      >Get Directions</a
+                    >
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Newsletter Start -->
+    <!-- <div class="container-fluid bg-primary newsletter p-0">
+      <div class="container p-0">
+        <div class="row g-0 align-items-center">
+          <div
+            class="col-md-5 ps-lg-0 text-start wow fadeIn"
+            data-wow-delay="0.2s"
+          >
+            <img class="img-fluid w-100" src="img/newsletter.jpg" alt="" />
+          </div>
+          <div
+            class="col-md-7 py-5 newsletter-text wow fadeIn"
+            data-wow-delay="0.5s"
+          >
+            <div class="p-5">
+              <h1 class="mb-5">
+                Subscribe the
+                <span class="text-uppercase text-primary bg-white px-2"
+                  >Newsletter</span
+                >
+              </h1>
+              <div class="position-relative w-100 mb-2">
+                <input
+                  class="form-control border-0 w-100 ps-4 pe-5"
+                  type="text"
+                  placeholder="Enter Your Email"
+                  style="height: 60px"
+                />
+                <button
+                  type="button"
+                  class="btn shadow-none position-absolute top-0 end-0 mt-2 me-2"
+                >
+                  <i class="fa fa-paper-plane text-primary fs-4"></i>
+                </button>
+              </div>
+              <p class="mb-0">Diam sed sed dolor stet amet eirmod</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Newsletter End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="d-inline-block mb-3">
+              <h1 class="text-white">HI-Tech</h1>
+            </a>
+            <p class="mb-0">
+              HI-Tech Constructions — your trusted building partner in
+              Krishnagiri and across Krishnagiri District, delivering expert
+              architecture, structural planning, and construction solutions.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+            <h5 class="text-white mb-4">Get In Touch</h5>
+            <p>
+              <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA
+            </p>
+            <p><i class="fa fa-phone-alt me-3"></i>+91 8825949238</p>
+            <p><i class="fa fa-phone-alt me-3"></i>+91 9894231759</p>
+            <p class="d-flex align-items-center">
+              <i class="fa fa-envelope me-3"></i
+              >hitechconstructions256@gmail.com
+            </p>
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-outline-primary btn-square border-2 me-2"
+                href="#!"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-outline-primary btn-square border-2 me-2"
+                href="#!"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-outline-primary btn-square border-2 me-2"
+                href="#!"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a
+                class="btn btn-outline-primary btn-square border-2 me-2"
+                href="#!"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                class="btn btn-outline-primary btn-square border-2 me-2"
+                href="#!"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+            <h5 class="text-white mb-4">Popular Link</h5>
+            <a class="btn btn-link" href="/about.html">Home</a>
+            <a class="btn btn-link" href="/about.html">About Us</a>
+            <a class="btn btn-link" href="/service.html">Services</a>
+            <a class="btn btn-link" href="/project.html">Projects</a>
+            <a class="btn btn-link" href="/contact.html">Contact Us</a>
+
+            <a class="btn btn-link" href="#!">Terms & Condition</a>
+          </div>
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+            <h5 class="text-white mb-4">Our Top Services</h5>
+            <a class="btn btn-link" href="#!">Interior Design</a>
+            <a class="btn btn-link" href="#!">Vastu Project Planning</a>
+            <a class="btn btn-link" href="#!">Renovation</a>
+            <a class="btn btn-link" href="#!">Modular Kitchen</a>
+            <a class="btn btn-link" href="#!">Digital Land Surveying</a>
+          </div>
+        </div>
+      </div>
+      <div class="container wow fadeIn" data-wow-delay="0.1s">
+        <div class="copyright">
+          <div class="row">
+            <div
+              class="col-12 d-flex flex-column flex-md-row justify-content-between align-items-center text-center"
+            >
+              <div class="mb-2 mb-md-0">
+                &copy;
+                <a class="border-bottom" href="/"
+                  >HI-Tech Constructions & Builders.</a>
+                  <p>All Rights Reserved. </p>
+              </div>
+
+              <div>
+                Crafted ❤️ By
+                <a
+                  class="border-bottom"
+                  target="_blank"
+                  href="https://junaith-portfolio.vercel.app/"
+                  >CoderzWeb</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="#!" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Confetti Animation
+      class ConfettiParticle {
+        constructor(canvas) {
+          this.canvas = canvas;
+          this.ctx = canvas.getContext("2d");
+          this.reset();
+          this.colors = [
+            "#ff6b6b",
+            "#4ecdc4",
+            "#45b7d1",
+            "#96ceb4",
+            "#ffeaa7",
+            "#dda0dd",
+            "#ff7675",
+            "#74b9ff",
+          ];
+          this.color =
+            this.colors[Math.floor(Math.random() * this.colors.length)];
+        }
+
+        reset() {
+          this.x = Math.random() * this.canvas.width;
+          this.y = Math.random() * this.canvas.height - this.canvas.height;
+          this.vx = (Math.random() - 0.5) * 6;
+          this.vy = Math.random() * 3 + 2;
+          this.rotation = Math.random() * 360;
+          this.rotationSpeed = (Math.random() - 0.5) * 10;
+          this.size = Math.random() * 8 + 4;
+          this.gravity = 0.1;
+        }
+
+        update() {
+          this.x += this.vx;
+          this.y += this.vy;
+          this.vy += this.gravity;
+          this.rotation += this.rotationSpeed;
+
+          if (this.y > this.canvas.height + 100) {
+            this.reset();
+          }
+        }
+
+        draw() {
+          this.ctx.save();
+          this.ctx.translate(this.x, this.y);
+          this.ctx.rotate((this.rotation * Math.PI) / 180);
+          this.ctx.fillStyle = this.color;
+          this.ctx.fillRect(
+            -this.size / 2,
+            -this.size / 2,
+            this.size,
+            this.size
+          );
+          this.ctx.restore();
+        }
+      }
+
+      class ConfettiSystem {
+        constructor() {
+          this.canvas = document.getElementById("confetti-canvas");
+          this.ctx = this.canvas.getContext("2d");
+          this.particles = [];
+          this.isActive = false;
+          this.animationId = null;
+          this.resizeCanvas();
+          window.addEventListener("resize", () => this.resizeCanvas());
+        }
+
+        resizeCanvas() {
+          this.canvas.width = window.innerWidth;
+          this.canvas.height = window.innerHeight;
+        }
+
+        start() {
+          if (this.isActive) return;
+          this.isActive = true;
+          this.particles = [];
+
+          // Create particles
+          for (let i = 0; i < 100; i++) {
+            this.particles.push(new ConfettiParticle(this.canvas));
+          }
+
+          this.animate();
+
+          // Auto stop after 4 seconds
+          setTimeout(() => this.stop(), 4000);
+        }
+
+        animate() {
+          if (!this.isActive) return;
+
+          this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
+          this.particles.forEach((particle) => {
+            particle.update();
+            particle.draw();
+          });
+
+          this.animationId = requestAnimationFrame(() => this.animate());
+        }
+
+        stop() {
+          this.isActive = false;
+          if (this.animationId) {
+            cancelAnimationFrame(this.animationId);
+          }
+          this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+          this.particles = [];
+        }
+      }
+
+      const confetti = new ConfettiSystem();
+
+      // Form submission handler
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const form = e.target;
+          const formData = new FormData(form);
+          const submitBtn = document.getElementById("submitBtn");
+          const successMessage = document.getElementById("successMessage");
+          const errorMessage = document.getElementById("errorMessage");
+
+          // Hide previous messages
+          successMessage.style.display = "none";
+          errorMessage.style.display = "none";
+
+          // Add loading state
+          submitBtn.classList.add("btn-loading");
+          submitBtn.disabled = true;
+
+          try {
+            const response = await fetch(form.action, {
+              method: "POST",
+              body: formData,
+            });
+
+            const result = await response.json();
+
+            if (response.ok && result.success) {
+              // Success - show message, reset form, and trigger confetti
+              successMessage.style.display = "block";
+              form.reset();
+
+              // Trigger confetti celebration
+              confetti.start();
+
+              // Scroll to success message
+              successMessage.scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+              });
+
+              // Hide success message after 6 seconds
+              setTimeout(() => {
+                successMessage.style.display = "none";
+              }, 7000);
+            } else {
+              throw new Error(result.message || "Form submission failed");
+            }
+          } catch (error) {
+            // Error - show error message
+            console.error("Submission error:", error);
+            errorMessage.innerHTML = `<strong>Error!</strong> ${
+              error.message ||
+              "There was a problem sending your message. Please try again."
+            }`;
+            errorMessage.style.display = "block";
+            errorMessage.scrollIntoView({
+              behavior: "smooth",
+              block: "center",
+            });
+
+            // Hide error message after 8 seconds
+            setTimeout(() => {
+              errorMessage.style.display = "none";
+            }, 8000);
+          } finally {
+            // Reset button state
+            submitBtn.classList.remove("btn-loading");
+            submitBtn.disabled = false;
+          }
+        });
+
+      // Prevent double submission
+      document
+        .getElementById("submitBtn")
+        .addEventListener("click", function (e) {
+          if (this.classList.contains("btn-loading")) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
+        });
+    </script>
+  </body>
+</html>
