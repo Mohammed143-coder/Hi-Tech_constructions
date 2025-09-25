@@ -1,322 +1,582 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-   <title>HI -Tech Constructions | Projects</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+  <head>
+    <meta charset="utf-8" />
+    <title>HI -Tech Constructions | Projects</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.ico" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-grow text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
     </div>
     <!-- Spinner End -->
 
-
     <!-- Navbar Start -->
     <div class="container-fluid sticky-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light border-bottom border-2 border-white">
-                <a href="index.html" class="navbar-brand">
-                    <h1>Hi-Tech</h1>
-                </a>
-                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="project.html" class="nav-item nav-link active">Projects</a>
-                        
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
+      <div class="container">
+        <nav
+          class="navbar navbar-expand-lg navbar-light border-bottom border-2 border-white"
+        >
+          <a href="index.html" class="navbar-brand">
+            <img
+              src="./img/Hi-tech-logo.webp"
+              alt="Hi-Tech-logo"
+              loading="eager"
+              width="110"
+              height="59"
+            />
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler ms-auto me-0"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="about.html" class="nav-item nav-link">About</a>
+              <a href="service.html" class="nav-item nav-link">Services</a>
+              <a href="project.html" class="nav-item nav-link active"
+                >Projects</a
+              >
+
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
     <!-- Navbar End -->
 
-
     <!-- Hero Start -->
     <div class="container-fluid pb-5 bg-primary hero-header">
-        <div class="container py-5">
-            <div class="row g-3 align-items-center">
-                <div class="col-lg-6 text-center text-lg-start">
-                    <h1 class="display-1 mb-0 animated slideInLeft">Projects</h1>
-                </div>
-                <div class="col-lg-6 animated slideInRight">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center justify-content-lg-end mb-0">
-                            <li class="breadcrumb-item"><a class="text-primary" href="#!">Home</a></li>
-                            <li class="breadcrumb-item"><a class="text-primary" href="#!">Pages</a></li>
-                            <li class="breadcrumb-item text-secondary active" aria-current="page">Projects</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
+      <div class="container py-5">
+        <div class="row g-3 align-items-center">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="display-1 mb-0 animated slideInLeft">Projects</h1>
+          </div>
+          <div class="col-lg-6 animated slideInRight">
+            <nav aria-label="breadcrumb">
+              <ol
+                class="breadcrumb justify-content-center justify-content-lg-end mb-0"
+              >
+                <li class="breadcrumb-item">
+                  <a class="text-primary" href="#!">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a class="text-primary" href="#!">Pages</a>
+                </li>
+                <li
+                  class="breadcrumb-item text-secondary active"
+                  aria-current="page"
+                >
+                  Projects
+                </li>
+              </ol>
+            </nav>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Hero End -->
 
-
     <!-- Project Start -->
     <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row g-0">
-                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="d-flex flex-column justify-content-center bg-primary h-100 p-5">
-                        <h1 class="text-white mb-5">Our Latest <span
-                                class="text-uppercase text-primary bg-light px-2">Projects</span></h1>
-                        <h4 class="text-white mb-0"><span class="display-1">6</span> of our latest projects</h4>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="row g-0">
-                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.2s">
-                            <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/project-1.jpg" alt="">
-                                <a class="project-overlay text-decoration-none" href="#!">
-                                    <h4 class="text-white">Kitchen</h4>
-                                    <small class="text-white">72 Projects</small>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                            <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/project-2.jpg" alt="">
-                                <a class="project-overlay text-decoration-none" href="#!">
-                                    <h4 class="text-white">Bathroom</h4>
-                                    <small class="text-white">67 Projects</small>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s">
-                            <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/project-3.jpg" alt="">
-                                <a class="project-overlay text-decoration-none" href="#!">
-                                    <h4 class="text-white">Bedroom</h4>
-                                    <small class="text-white">53 Projects</small>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                            <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/project-4.jpg" alt="">
-                                <a class="project-overlay text-decoration-none" href="#!">
-                                    <h4 class="text-white">Living Room</h4>
-                                    <small class="text-white">33 Projects</small>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.6s">
-                            <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/project-5.jpg" alt="">
-                                <a class="project-overlay text-decoration-none" href="#!">
-                                    <h4 class="text-white">Furniture</h4>
-                                    <small class="text-white">87 Projects</small>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.7s">
-                            <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/project-6.jpg" alt="">
-                                <a class="project-overlay text-decoration-none" href="#!">
-                                    <h4 class="text-white">Rennovation</h4>
-                                    <small class="text-white">69 Projects</small>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container mt-5">
+        <div class="row g-0">
+          <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <div
+              class="d-flex flex-column justify-content-center bg-primary h-100 p-5"
+            >
+              <h1 class="text-white mb-5">
+                Our Best
+                <span class="text-uppercase text-primary bg-light px-2"
+                  >Projects</span
+                >
+              </h1>
+              <h4 class="text-white mb-0">
+                <span class="display-1">6</span> of our catagories
+              </h4>
             </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-0">
+              <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.2s">
+                <div class="project-item position-relative overflow-hidden">
+                  <img
+                    class="img-fluid w-100"
+                    src="img/project-1.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <a class="project-overlay text-decoration-none" href="#!">
+                    <h4 class="text-white">Modular Kitchen</h4>
+                    <small class="text-white">70+ Projects</small>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                <div class="project-item position-relative overflow-hidden">
+                  <img
+                    class="img-fluid w-100"
+                    src="img/project-2.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <a class="project-overlay text-decoration-none" href="#!">
+                    <h4 class="text-white">Stylish Bathroom</h4>
+                    <small class="text-white">90+ Projects</small>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s">
+                <div class="project-item position-relative overflow-hidden">
+                  <img
+                    class="img-fluid w-100"
+                    src="img/project-3.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <a class="project-overlay text-decoration-none" href="#!">
+                    <h4 class="text-white">Bedroom</h4>
+                    <small class="text-white">90+ Projects</small>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                <div class="project-item position-relative overflow-hidden">
+                  <img
+                    class="img-fluid w-100"
+                    src="img/project-4.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <a class="project-overlay text-decoration-none" href="#!">
+                    <h4 class="text-white">Living Room</h4>
+                    <small class="text-white">90+ Projects</small>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.6s">
+                <div class="project-item position-relative overflow-hidden">
+                  <img
+                    class="img-fluid w-100"
+                    src="img/project-5.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <a class="project-overlay text-decoration-none" href="#!">
+                    <h4 class="text-white">Interior</h4>
+                    <small class="text-white">90+ Projects</small>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.7s">
+                <div class="project-item position-relative overflow-hidden">
+                  <img
+                    class="img-fluid w-100"
+                    src="img/project-6.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <a class="project-overlay text-decoration-none" href="#!">
+                    <h4 class="text-white">Rennovation</h4>
+                    <small class="text-white">20+ Projects</small>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Project End -->
 
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl pb-5">
-        <div class="container pb-5">
-            <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-9">
-                    <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.2s">
-                        <div class="testimonial-item">
-                            <div class="row g-5 align-items-center">
-                                <div class="col-md-6">
-                                    <div class="testimonial-img">
-                                        <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="testimonial-text pb-5 pb-md-0">
-                                        <h3>Sustainable Material</h3>
-                                        <p>Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed
-                                            stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
-                                            dolore erat
-                                            amet</p>
-                                        <h5 class="mb-0">Boris Johnson</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <div class="row g-5 align-items-center">
-                                <div class="col-md-6">
-                                    <div class="testimonial-img">
-                                        <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="testimonial-text pb-5 pb-md-0">
-                                        <h3>Customer Satisfaction</h3>
-                                        <p>Clita erat ipsum et lorem et sit, sed
-                                            stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
-                                            dolore erat
-                                            amet</p>
-                                        <h5 class="mb-0">Alexander Bell</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <div class="row g-5 align-items-center">
-                                <div class="col-md-6">
-                                    <div class="testimonial-img">
-                                        <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="testimonial-text pb-5 pb-md-0">
-                                        <h3>Budget Friendly</h3>
-                                        <p>Diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed
-                                            stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
-                                            dolore erat
-                                            amet</p>
-                                        <h5 class="mb-0">Bradley Gordon</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Gallery Start  -->
+    <section class="gallery-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-subtitle">Our Portfolio</div>
+          <h2 class="section-title">Construction Gallery</h2>
+          <p class="text-muted">
+            Explore our premium construction and architectural projects
+          </p>
         </div>
-    </div>
-    <!-- Testimonial End -->
 
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Gallery Item 1 -->
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=600&fit=crop&crop=center"
+              alt="Modern Office Building"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <i class="fas fa-building overlay-icon"></i>
+                <div class="company-name">HI-Tech Constructions</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 2 -->
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=700&fit=crop&crop=center"
+              alt="Construction Site"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <i class="fas fa-hard-hat overlay-icon"></i>
+                <div class="company-name">HI-Tech Constructions</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 3 -->
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&h=500&fit=crop&crop=center"
+              alt="Architectural Planning"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <i class="fas fa-drafting-compass overlay-icon"></i>
+                <div class="company-name">HI-Tech Constructions</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 4 -->
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=800&fit=crop&crop=center"
+              alt="Luxury Home"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <i class="fas fa-home overlay-icon"></i>
+                <div class="company-name">HI-Tech Constructions</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 5 -->
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=650&fit=crop&crop=center"
+              alt="Commercial Building"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <i class="fas fa-city overlay-icon"></i>
+                <div class="company-name">HI-Tech Constructions</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 6 -->
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=400&h=550&fit=crop&crop=center"
+              alt="Interior Design"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <i class="fas fa-couch overlay-icon"></i>
+                <div class="company-name">HI-Tech Constructions</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 7 -->
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=750&fit=crop&crop=center"
+              alt="Modern Architecture"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <i class="fas fa-building overlay-icon"></i>
+                <div class="company-name">HI-Tech Constructions</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 8 -->
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1448630360428-65456885c650?w=400&h=600&fit=crop&crop=center"
+              alt="Construction Equipment"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <i class="fas fa-tools overlay-icon"></i>
+                <div class="company-name">HI-Tech Constructions</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 9 -->
+          <div class="gallery-item">
+            <img
+              src="/img/project-1.jpg"
+              alt="Office Interior"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <i class="fas fa-briefcase overlay-icon"></i>
+                <div class="company-name">HI-Tech Constructions</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 10 -->
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=680&fit=crop&crop=center"
+              alt="Modern Office Space"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <i class="fas fa-building overlay-icon"></i>
+                <div class="company-name">HI-Tech Constructions</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 11 -->
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=620&fit=crop&crop=center"
+              alt="Residential Complex"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <i class="fas fa-home overlay-icon"></i>
+                <div class="company-name">HI-Tech Constructions</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 12 -->
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=720&fit=crop&crop=center"
+              alt="Luxury Villa"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <i class="fas fa-home overlay-icon"></i>
+                <div class="company-name">HI-Tech Constructions</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="load-more-container">
+          <button class="load-more-btn" onclick="loadMoreImages()">
+            <i class="fas fa-plus me-2"></i>
+            Load More Projects
+          </button>
+        </div>
+      </div>
+    </section>
 
     <!-- Newsletter Start -->
-   
+
     <!-- Newsletter End -->
 
-
-   
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer pt-5">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                    <a href="index.html" class="d-inline-block mb-3">
-                        <h1 class="text-white">HI-Tech</h1>
-                    </a>
-                    <p class="mb-0">HI-Tech Constructions — your trusted building partner in Krishnagiri and across Krishnagiri District, delivering expert architecture, structural planning, and construction solutions.</p>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                    <h5 class="text-white mb-4">Get In Touch</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+91 8825949238</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+91 9894231759</p>
-                    <p class="d-flex align-items-center"><i class="fa fa-envelope me-3"></i>hitechconstructions256@gmail.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
-                                class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <h5 class="text-white mb-4">Popular Link</h5>
-                    <a class="btn btn-link" href="/about.html">Home</a>
-                    <a class="btn btn-link" href="/about.html">About Us</a>
-                    <a class="btn btn-link" href="/service.html">Services</a>
-                    <a class="btn btn-link" href="/project.html">Projects</a>
-                    <a class="btn btn-link" href="/contact.html">Contact Us</a>
-                  
-                    
-                    <a class="btn btn-link" href="#!">Terms & Condition</a>
-                   
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <h5 class="text-white mb-4">Our Top Services</h5>
-                    <a class="btn btn-link" href="#!">Interior Design</a>
-                    <a class="btn btn-link" href="#!">Vastu Project Planning</a>
-                    <a class="btn btn-link" href="#!">Renovation</a>
-                    <a class="btn btn-link" href="#!">Modular Kitchen</a>
-                    <a class="btn btn-link" href="#!">Digital Land Surveying</a>
-                </div>
+      <div class="container py-3">
+        <div class="row g-5">
+          <div
+            class="col-md-6 col-lg-3 wow fadeIn text-center"
+            data-wow-delay="0.1s"
+          >
+            <a href="index.html" class="d-inline-block mb-3">
+              <img
+                src="/img/Hi-tech-logo.webp"
+                alt=""
+                width="150"
+                height="120"
+              />
+            </a>
+            <p class="mb-0">
+              HI-Tech Constructions — your trusted building partner in
+              Krishnagiri and across Krishnagiri District, delivering expert
+              architecture, structural planning, and construction solutions.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+            <h5 class="text-white mb-4">Get In Touch</h5>
+            <p class="">
+              <i class="fa fa-map-marker-alt me-3"></i>Rajaji Nagar, Stadium 2nd
+              gate opposite, 1st floor, Krishnagiri
+            </p>
+            <p><i class="fa fa-phone-alt me-3"></i>+91 8825949238</p>
+            <p><i class="fa fa-phone-alt me-3"></i>+91 9894231759</p>
+            <p class="d-flex align-items-center">
+              <i class="fa fa-envelope me-3"></i
+              >hitechconstructions256@gmail.com
+            </p>
+            <div class="d-flex pt-2">
+              <!-- <a
+                class="btn btn-outline-primary btn-square border-2 me-2"
+                href="#!"
+                ><i class="fab fa-twitter"></i
+              ></a> -->
+              <a
+                class="btn btn-outline-primary btn-square border-2 me-2"
+                href="https://www.facebook.com/profile.php?id=100075865182918&sfnsn=wiwspmo&mibextid=RUbZ1f"
+                target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <!-- <a
+                class="btn btn-outline-primary btn-square border-2 me-2"
+                href="#!"
+                ><i class="fab fa-youtube"></i
+              ></a> -->
+              <a
+                class="btn btn-outline-primary btn-square border-2 me-2"
+                href="https://www.instagram.com/hi_tech_constructions_builders"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <!-- <a
+                class="btn btn-outline-primary btn-square border-2 me-2"
+                href="#!"
+                ><i class="fab fa-linkedin-in"></i
+              ></a> -->
             </div>
-        </div>
-        <div class="container wow fadeIn" data-wow-delay="0.1s">
-    <div class="copyright">
-        <div class="row">
-            <div class="col-12 d-flex flex-column flex-md-row justify-content-between align-items-center text-center">
-                
-                <div class="mb-2 mb-md-0">
-                    &copy; <a class="border-bottom" href="/">HI Tech Constructions & Builders</a>. All Rights Reserved.
-                </div>
+          </div>
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+            <h5 class="text-white mb-4">Popular Link</h5>
+            <a class="btn btn-link" href="/about.html">Home</a>
+            <a class="btn btn-link" href="/about.html">About Us</a>
+            <a class="btn btn-link" href="/service.html">Services</a>
+            <a class="btn btn-link" href="/project.html">Projects</a>
+            <a class="btn btn-link" href="/contact.html">Contact Us</a>
 
-                <div>
-                    Crafted ❤️ By <a class="border-bottom" target="_blank" href="https://junaith-portfolio.vercel.app/">CoderzWeb</a>.  
-                </div> 
+            <a class="btn btn-link" href="#!">Terms & Condition</a>
+          </div>
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+            <h5 class="text-white mb-4">Our Top Services</h5>
+            <a class="btn btn-link" href="#!">Interior Design</a>
+            <a class="btn btn-link" href="#!">Vastu Project Planning</a>
+            <a class="btn btn-link" href="#!">Renovation</a>
+            <a class="btn btn-link" href="#!">Modular Kitchen</a>
+            <a class="btn btn-link" href="#!">Digital Land Surveying</a>
+          </div>
+        </div>
+      </div>
+      <div class="container wow fadeIn" data-wow-delay="0.1s">
+        <div class="copyright">
+          <div class="row">
+            <div
+              class="col-12 d-flex flex-column flex-md-row justify-content-between align-items-center text-center"
+            >
+              <div class="mb-2 mb-md-0 flex-md-col">
+                &copy;
+                <a class="border-bottom" href="/"
+                  >HI-Tech Constructions & Builders.</a
+                >
+                <p>All Rights Reserved.</p>
+              </div>
+
+              <div>
+                Crafted ❤️ By
+                <a
+                  class="border-bottom"
+                  target="_blank"
+                  href="https://junaith-portfolio.vercel.app/"
+                  >CoderzWeb</a
+                >
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-
+      </div>
     </div>
     <!-- Footer End -->
+    <!-- WhatsApp Icon -->
+    <a
+      href="https://api.whatsapp.com/send?phone=918825949238&text=Can i know more about your offers and packages from your website?"
+      target="_blank"
+      class="btn rounded-pill spinner-grow back-to-whatsApp"
+      style="
+        background-color: #25d366;
+        color: white;
+        border: none;
+        padding: 10px;
+      "
+    >
+      <i class="fab fa-whatsapp" style="font-size: 45px"></i>
+    </a>
 
     <!-- Back to Top -->
-    <a href="#!" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    <a href="#!" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -328,6 +588,75 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
 
+    <script>
+      // Smooth loading animation
+      window.addEventListener("load", function () {
+        const galleryItems = document.querySelectorAll(".gallery-item");
+        galleryItems.forEach((item, index) => {
+          setTimeout(() => {
+            item.style.opacity = "1";
+          }, index * 100);
+        });
+      });
+
+      // Load more functionality
+      function loadMoreImages() {
+        const gallery = document.getElementById("galleryGrid");
+        const button = document.querySelector(".load-more-btn");
+
+        // Show loading state
+        button.innerHTML =
+          '<i class="fas fa-spinner fa-spin me-2"></i>Loading...';
+        button.disabled = true;
+
+        // Simulate loading delay
+        setTimeout(() => {
+          // Add more images (you can replace with actual data)
+          const moreImages = [
+            "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=400&h=650&fit=crop",
+            "https://images.unsplash.com/photo-1600607687644-aac4c3eac9f1?w=400&h=580&fit=crop",
+            "https://images.unsplash.com/photo-1600607688066-890987e4c5c2?w=400&h=720&fit=crop",
+            "https://images.unsplash.com/photo-1600607688960-e095c0c1c49f?w=400&h=600&fit=crop",
+          ];
+
+          moreImages.forEach((src, index) => {
+            const item = document.createElement("div");
+            item.className = "gallery-item";
+            item.style.opacity = "0";
+            item.innerHTML = `
+                        <img src="${src}" alt="Construction Project">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-building overlay-icon"></i>
+                                <div class="company-name">HI-Tech Constructions</div>
+                               
+                            </div>
+                        </div>
+                    `;
+            gallery.appendChild(item);
+
+            // Animate in
+            setTimeout(() => {
+              item.style.opacity = "1";
+            }, index * 200);
+          });
+
+          // Reset button
+          button.innerHTML =
+            '<i class="fas fa-plus me-2"></i>Load More Projects';
+          button.disabled = false;
+        }, 1500);
+      }
+
+      // Add click handler for gallery items
+      document.addEventListener("click", function (e) {
+        if (e.target.closest(".gallery-item")) {
+          const item = e.target.closest(".gallery-item");
+          // Add your click functionality here (lightbox, etc.)
+          console.log("Gallery item clicked:", item);
+        }
+      });
+    </script>
+  </body>
 </html>
