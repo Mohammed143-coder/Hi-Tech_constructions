@@ -67,7 +67,8 @@
 .sticky-top {
     top: 0;
     transition: .5s;
-    background-color: #E6F0EF; /* Set default background to prevent flash */
+    background-color: #E6F0EF;
+    /* Set default background to prevent flash */
     /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
 }
 
@@ -125,10 +126,11 @@
 }
 
 @media (min-width: 992px) {
-   .back-to-top {
-bottom: 145px;
-right: 29px;
+    .back-to-top {
+        bottom: 145px;
+        right: 29px;
     }
+
     .navbar .nav-item .dropdown-menu {
         display: block;
         border: none;
@@ -161,8 +163,10 @@ body {
 
 /* Hero Header - Fixed margin issue */
 .hero-header {
-    margin-top: 0; /* Remove negative margin that causes layout shift */
-    padding-top: 100px; /* Adjust padding instead */
+    margin-top: 0;
+    /* Remove negative margin that causes layout shift */
+    padding-top: 100px;
+    /* Adjust padding instead */
     background: url(../img/hero-bg.jpg) top center no-repeat;
     background-size: cover;
 }
@@ -1402,7 +1406,8 @@ body {
 }
 
 /* Fix for layout shift issues */
-.container-fluid, .container {
+.container-fluid,
+.container {
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -1414,7 +1419,8 @@ body {
 }
 
 /* Prevent horizontal scroll */
-body, html {
+body,
+html {
     max-width: 100%;
     overflow-x: hidden;
 }
