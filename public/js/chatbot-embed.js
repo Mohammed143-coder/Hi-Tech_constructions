@@ -122,6 +122,7 @@
                 overflow-y: auto;
                 padding: 16px;
                 background: #f8f9fa;
+                word-wrap: break-word;
             }
 
             .hitech-message {

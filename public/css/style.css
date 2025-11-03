@@ -1436,3 +1436,11 @@ img {
     height: auto;
     display: block;
 }
+@media (max-width: 768px) {
+  .team-overlay {
+    opacity: 1 !important;
+    background: rgba(0, 0, 0, 0.122);
+    position: relative;
+    border-radius: 10%;
+  }
+}
